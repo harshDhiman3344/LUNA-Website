@@ -1,20 +1,25 @@
+import React from "react";
+
 const Navbar = () => {
   return (
-    <nav className="flex sm:justify-center space-x-4">
-      {[
-        ["Home", "/dashboard"],
-        ["Team", "/team"],
-        ["Projects", "/projects"],
-        ["Reports", "/reports"],
-      ].map(([title, url]) => (
-        <a
-          href={url}
-          className="rounded-lg px-3 py-2 font-medium text-slate-100"
-        >
-          {title}
-        </a>
-      ))}
-    </nav>
+    <div className="mt-10 flex justify-center">
+      <nav className="inline-flex rounded-full backdrop-blur-sm bg-white/10">
+        {[
+          ["Home", "/dashboard"],
+          ["Team", "/team"],
+          ["Projects", "/projects"],
+          ["Reports", "/reports"],
+        ].map(([title, url], index) => (
+          <a
+            key={index}
+            href={url}
+            className="px-6 py-2 text-sm font-medium text-slate-100 hover:bg-white/20 transition-colors duration-200 first:rounded-l-full last:rounded-r-full"
+          >
+            {title}
+          </a>
+        ))}
+      </nav>
+    </div>
   );
 };
 

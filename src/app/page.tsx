@@ -12,10 +12,8 @@ export default function Home() {
         alt="Background"
         className="z-0"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 z-10">
-        <div className="backdrop-blur-sm">
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 z-10">
           <Navbar />
-        </div>
         <div className="flex justify-center mt-40 h-full">
           <h1 className="text-4xl md:text-6xl font-bold text-white text-center animate-fadeIn">
             Welcome to the{" "}
